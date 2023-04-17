@@ -14,13 +14,13 @@ After the modeling is complete, you can use the algorithm for MCMF problems to f
 The algorithm needs to find negative cycles. See the code and explanation in this [link](https://konaeakira.github.io/posts/using-the-shortest-path-faster-algorithm-to-find-negative-cycles.html).
 
 ## Input and Output
-Each input file contains several test cases and each test case consists of a matrix that specifies the output voltage when a cable is plugged into a port.
-The first line of the input file contains an integer T, that denotes the number of test cases in this input file.
-The next line contains another integer N which is the number of cables (and ports) in the next test case.
-The subsequent N lines denote an N × N integer matrix V, in which Vij is the output voltage when the cable i is plugged into port j.
-The rest of the lines denote other test cases, where each has the same format: an integer N and an N × N integer matrix V.
-
-The output file is expected to contain the maximum voltage to run Bat-Signal for each test case in the input file in a separate line. The correct output file should show the maximum voltage for each test case.
+* Each input file contains several test cases and each test case consists of a matrix that specifies the output voltage when a cable is plugged into a port.
+* The first line of the input file contains an integer T, that denotes the number of test cases in this input file.
+* The next line contains another integer N which is the number of cables (and ports) in the next test case.
+* The subsequent N lines denote an N × N integer matrix V, in which Vij is the output voltage when the cable i is plugged into port j.
+* The rest of the lines denote other test cases, where each has the same format: an integer N and an N × N integer matrix V.
+* The output file is expected to contain the maximum voltage to run Bat-Signal for each test case in the input file in a separate line. 
+* The correct output file should show the maximum voltage for each test case.
 
 ![image](https://user-images.githubusercontent.com/64011660/231547253-eab7b12b-aee2-4c66-bee1-050e60d9c489.png)
 
@@ -28,7 +28,7 @@ A graph representation (left) and a perfect matching (right) with maximum voltag
 model the problem with MCMF.
 
 ## Running the Program
-Your code must read the name of the input and output files from the command line. We will run your code as follows:
+This code reads the name of the input and output files from the command line. You can run the code as follows:
 
 ```
 g++ *.cpp -std=c++11 -o project4
